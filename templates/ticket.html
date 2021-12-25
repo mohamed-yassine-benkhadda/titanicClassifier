@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ticket.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <title>ticket</title>
+</head>
+<body>
+    <div class="main">
+        <div class="center center_title">
+        <h2 class="main_text">
+            Ticket Is Ready<h2 class="results_number invisible">{{ y_pred }}</h2>
+            <h2 class="invisible name">{{L[1]}}</h2>
+            <h2 class="invisible pclass">{{L[0]}}</h2>
+            <h2 class="invisible sex">{{L[2]}}</h2>
+            <h2 class="invisible age">{{L[3]}}</h2>
+            <h2 class="invisible Ticket">{{L[4]}}</h2>
+            <h2 class="invisible Cabin">{{L[5]}}</h2>
+            <h2 class="invisible embarked">{{L[6]}}</h2>
+        </h2>
+        <span class="sub_text">
+            (click on the ticket to travel)
+        </span>
+    </div>
+    <div class="center">
+        <div class="left_ticket">
+            <div class="header">
+                <img src="../static/img/anchor.svg" alt="" class="logo">
+                <h2 class="primary_text">
+                    BOARDING PASS
+                </h2>
+            </div>
+            <div class="line primary_line"></div>
+            <div class="center">
+                <div class="info_cont">
+                    <div class="infos_primary">
+                        <div class="row">
+                            <h2 class="label">
+                                NAME
+                            </h2>
+                        </div>
+                        <div class="row">
+                            <h2 class="info name_info">BENKHADDA Mohamed Yassine</h2>
+                        </div>
+                        <div class="row">
+                            <div class="div">
+                                <h2 class="label">GATE</h2><span class="info">31</span>
+                            </div>
+                            <div class="div">
+                                <h2 class="label">CABIN</h2><span class="info cabin_info">C45</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="div">
+                                <h2 class="label">TICKET</h2><span class="info ticket_info">AZ568932x</span>
+                            </div>
+                            <div class="div">
+                                <h2 class="label">CLASS</h2><span class="info class_info">1st class</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="div">
+                                <h2 class="label">FROM</h2><span class="info from_info">SOUTHAMPTON</span>
+                            </div>
+                            <div class="div">
+                                <h2 class="label">TO</h2><span class="info">NEW YORK</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="barcode_row">
+                        <img src="../static/img/barcode.svg" class="barcode">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right_ticket">
+            <div class="center_ticket">
+                <img src="../static/img/barcode_white.svg" class="barcode_white">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="results">
+        <div class="center_window">
+            <img src="../static/img/yes.svg" class="mark">
+            <div class="center">
+                <h2 class="main_text message">
+                    Congratulations, You've survived the titanic disaster
+                </h2>
+            </div>
+            <div class="content">
+                <div class="center">
+                    <h2 class="sub_message">
+                        learn more about the model 
+                    </h2>
+                </div>
+                <span><a href="https://github.com/mohamed-yassine-benkhadda/Titanic_disaster"><h2 class="sub_message link">here</h2></a></span>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script/ticket.js') }}"></script>
+</body>
+</html>

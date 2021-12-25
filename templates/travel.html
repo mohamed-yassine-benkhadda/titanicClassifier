@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/travel.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <title>Travel</title>
+</head>
+<body>
+    <div class="main">
+        <div class="main_left">
+            <img src="../static/img/man-svgrepo-com.svg" class="pic">
+        </div>
+        <div class="main_right">
+            <div class="center">
+                <h2 class="main_text">
+                    Personal informations
+                </h2>
+            </div>
+            <form method="post" action="ticket">
+                <div class="row_form">
+                    <h2 class="label">Title</h2>
+                    <input type="text" name="title"class="input_text" placeholder="Mr,Mrs,DR...">
+                </div>
+                <div class="row_form">
+                    <h2 class="label">Last name</h2>
+                    <input type="text" name="last name"class="input_text" placeholder="BENKHADDA">
+                </div>
+                <div class="row_form">
+                    <h2 class="label">First name</h2>
+                    <input type="text" name="first name"class="input_text" placeholder="Mohamed Yassine">
+                </div>
+                <div class="row_form">
+                    <h2 class="label">Sex</h2>
+                    <select name="sex" class="dropdown sex">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="row_form">
+                    <h2 class="label">class</h2>
+                        <select name="class" class="dropdown">
+                            <option value=1>1st class</option>
+                            <option value=2>2nd class</option>
+                            <option value=3>3th class</option>
+                        </select>
+                </div>
+                <div class="row_form">
+                    <h2 class="label">Embarked from</h2>
+                    <select name="embarked" class="dropdown">
+                        <option value="S">Southampton</option>
+                        <option value="Q">Queenstown</option>
+                        <option value="C">Cherbourg</option>
+                    </select>
+                </div>
+                <div class="row_form">
+                    <h2 class="label">Age</h2>
+                    <input type="number" name="age" class="input_number">
+                </div>
+                <div class="row_form">
+                    <div class="div4 divh">
+                        <h2 class="label">Siblings</h2>
+                        <input type="number" name="siblings" class="input_number_small">
+                    </div>
+                    <div class="div4 divh">
+                        <h2 class="label">Epouses</h2>
+                        <input type="number" name="epouses" class="input_number_small">
+                    </div>
+                    <div class="div4 divh">
+                        <h2 class="label">Parents</h2>
+                        <input type="number" name="parents" class="input_number_small">
+                    </div>
+                    <div class="div4 divh">
+                        <h2 class="label">Children</h2>
+                        <input type="number" name="children" class="input_number_small">
+                    </div>
+                </div>
+                <div class="center">
+                    <button type="submit" class="btn-primary">Order Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../static/script/travel.js"></script>
+</body>
+</html>
